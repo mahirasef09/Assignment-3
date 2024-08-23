@@ -24,22 +24,22 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        h_color: 'rgb(33,33,33)',
-                        p_color: 'rgb(73,73,73)',
-                        f_color: 'rgb(233,233,233)',
+                        hcolor: "rgb(33,33,33)",
+                        pcolor: 'rgb(73,73,73)',
+                        fcolor: 'rgb(233,233,233)',
                         bg_color: 'rgb(244,244,244)',
-                        li_color: 'rgb(115,115,115)',
+                        licolor: 'rgb(115,115,115)',
                         btn_text: 'rgb(28,28,28)',
-                        btn_bg_1: 'rgb(171, 239, 95)'
-                        btn_bg_2: 'rgb(171, 239, 95, 0.5)'
-                        btn_bg_3: 'rgb(171, 239, 95, 0.2)'
+                        btn_bg_1: 'rgb(171, 239, 95)',
+                        btn_bg_2: 'rgb(171, 239, 95, 0.5)',
+                        btn_bg_3: 'rgb(171, 239, 95, 0.2)',
                         inp_color: 'rgb(160,160,160)',
 
                     }
 
-                    fontFamily: {
-                        'manrope': ['Manrope', 'sans-serif']
-                    }
+                    // fontFamily: {
+                    //     'manrope': ['Manrope', 'sans-serif']
+                    // }
                 }
             }
         }
@@ -47,56 +47,62 @@
 </head>
 
 <body class="font-manrope">
-    <main>
-        <!-- Header Section -->
-        <header>
-            <!-- Nav Section -->
-            <nav>
-                <div class="navbar bg-base-100">
-                    <div class="navbar-start">
-                        <a class="btn btn-ghost text-xl"><i class="-rotate-45 fa fa-long-arrow-right"
-                                aria-hidden="true"></i>Rinterio</a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </div>
-                    <div class="navbar-end">
-                        <a class="btn">Book Consult <i class="-rotate-45 fa fa-long-arrow-right"
-                                aria-hidden="true"></i></a>
-                    </div>
-                    <button class="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            class="inline-block h-5 w-5 stroke-current">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-
-            <!-- Banner Section -->
-            <div class="flex justify-center">
-                <img src="./assets/banner.png" alt="">
+    <!-- Header Section -->
+    <header class="">
+        <!-- Nav Section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl"><i
+                        class="bg-yellow-400 rounded-full p-1 -rotate-45 fa fa-long-arrow-right"
+                        aria-hidden="true"></i><span class="text-2xl font-bold">Rinterio</span></a>
             </div>
-            <div class="text-center space-y-6">
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-black/50 font-bold">Home</a></li>
+                    <li><a class="text-black/40">Services</a></li>
+                    <li><a class="text-black/40">Portfolio</a></li>
+                    <li><a class="text-black/40">Blogs</a></li>
+                    <li><a class="text-black/40">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
 
-                <h1>A barn house of this design has a striking appearance</h1>
-                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+            </div>
+            <div class="navbar-end space-x-4">
+                <i class="bg-gray-200 rounded-full p-2 fa fa-search" aria-hidden="true"></i>
+                <i class="bg-gray-200 rounded-full p-2 fa fa-shopping-cart" aria-hidden="true"></i>
+                <button class="bg-yellow-400 rounded-3xl p-2 text-black font-bold">Book Consult <i
+                        class="bg-black text-white rounded-full p-1 -rotate-45 fa fa-long-arrow-right"
+                        aria-hidden="true"></i></button>
+            </div>
+            <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block h-5 w-5 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="flex justify-center">
+            <img src="./assets/banner.png" alt="">
+        </div>
+        <div class="flex justify-center">
+            <div class="inline-block w-3/4 text-center space-y-6">
+                <h1 class="text-black text-6xl font-bold">A barn house of this design has a striking appearance</h1>
+                <p class="text-black/50 font-bold">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring
                     weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <button>View Details <i class="-rotate-45 fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <button class="bg-yellow-200 rounded-3xl p-2 text-black font-bold">View Details <i
+                        class="bg-yellow-400 rounded-full p-1 -rotate-45 fa fa-long-arrow-right"
+                        aria-hidden="true"></i></button>
             </div>
-        </header>
+        </div>
+        
+    </header>
 
+    <main>
         <!-- Liveable Spaces and Our Works Process Section -->
         <section class="my-12">
             <!-- Liveable Spaces Portion -->
@@ -225,25 +231,33 @@
         </section>
 
         <!-- Let’s Connect Section -->
-        <section class="my-12">
-            <div class="text-center">
-                <button><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Let’s Connect</button>
-                <h1>Our Latest Portfolio</h1>
-                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+        <section class="my-12 py-12 bg-cover bg-center h-screen" style="background-image: url('./assets/bg.jpg');">
+            <div class="text-center space-y-4">
+                <button class="bg-yellow-100 text-black/60 rounded-3xl px-2 font-bold"><i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>Let’s Connect</button>
+                <h1 class="text-black text-3xl font-bold">Let’s Discuss Next Project</h1>
+                <p class="text-black/60">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring
                     weathered
                     wood, sleek metal accents.</p>
             </div>
-            <div>
-                <input type="text" placeholder="First Name*"
-                    class="input input-bordered input-accent w-full max-w-xs" />
-                <input type="text" placeholder="Last Name*" class="input input-bordered input-accent w-full max-w-xs" />
-                <input type="text" placeholder="Phone Number*"
-                    class="input input-bordered input-accent w-full max-w-xs" />
-                <input type="email" placeholder="Email" class="input input-bordered input-accent w-full max-w-xs" />
-                <input type="text" placeholder="Write your message here"
-                    class="input input-bordered input-accent w-full max-w-xs" />
+            <div class="my-4">
+                <div class="bg-yellow-50">
+                    <input type="text" placeholder="First Name*"
+                        class="input input-bordered input-accent w-full max-w-md" />
+                    <input type="text" placeholder="Last Name*"
+                        class="input input-bordered input-accent w-full max-w-md" />
+                    <input type="text" placeholder="Phone Number*"
+                        class="input input-bordered input-accent w-full max-w-md" />
+                    <input type="email" placeholder="Email" class="input input-bordered input-accent w-full max-w-md" />
+                    <input type="text" placeholder="Write your message here"
+                        class="input input-bordered input-accent w-full max-w-4xl" />
+                </div>
             </div>
-            <button>View Details <i class="-rotate-45 fa fa-long-arrow-right" aria-hidden="true"></i></button>
+
+            <button class="bg-yellow-500 rounded-3xl p-2 text-black font-bold ">Book Consult <i
+                    class="bg-black text-white rounded-full p-1 -rotate-45 fa fa-long-arrow-right"
+                    aria-hidden="true"></i></button>
 
         </section>
 
@@ -254,7 +268,7 @@
                 <h1>Heading</h1>
                 <p>Paragraph</p>
             </div>
-            <div class="grid grid-cols-3">
+            <div class="grid grid-rows-2 grid-cols-3">
                 <div>
                     <img src="./assets/article1.png" alt="">
                 </div>
@@ -271,18 +285,22 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="text-center">
-        <h1><i class="-rotate-45 fa fa-long-arrow-right" aria-hidden="true"></i>Rinterio</h1>
-        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+    <footer class="text-center bg-black space-y-4 py-12">
+        <h1><i class="bg-yellow-400 rounded-full p-1 -rotate-45 fa fa-long-arrow-right" aria-hidden="true"></i> <span
+                class="text-white text-2xl font-bold">Rinterio</span></h1>
+        <p class="text-white/40">The barn house captivates with its blend of rustic charm and modern sophistication,
+            featuring weathered wood,
             sleek metal accents.</p>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Blogs</a></li>
-            <li><a href="">Contact Us</a></li>
+        <ul class="flex justify-evenly">
+            <li><a class="text-white/80" href="">Home</a></li>
+            <li><a class="text-white/80" href="">Services</a></li>
+            <li><a class="text-white/80" href="">Portfolio</a></li>
+            <li><a class="text-white/80" href="">Blogs</a></li>
+            <li><a class="text-white/80" href="">Contact Us</a></li>
         </ul>
-        <button>Book Consult <i class="-rotate-45 fa fa-long-arrow-right" aria-hidden="true"></i></button>
+        <button class="bg-yellow-400 rounded-3xl p-2 text-black font-bold ">Book Consult <i
+                class="bg-black text-white rounded-full p-1 -rotate-45 fa fa-long-arrow-right"
+                aria-hidden="true"></i></button>
     </footer>
 </body>
 
